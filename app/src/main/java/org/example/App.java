@@ -9,6 +9,17 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        TreeMap map = new TreeMap();
+
+        map.insert("keyOne", "valueOne");
+        map.insert("keyTwo", "valueTwo");
+        map.insert("keyThree", "valueThree");
+
+        System.out.println(map.get("keyOne"));
+        System.out.println(map.get("keyThree"));
+
+        System.out.println(map.get("keyDNE"));
+
+        System.out.println(map.delete("keyOne"));
     }
 }
